@@ -7,6 +7,7 @@
 //
 
 #import "DBMatcher.h"
+#import "ModuleBundle.h"
 
 typedef NSArray* (^MatcherBlock)(NSString *password);
 
@@ -606,7 +607,7 @@ typedef NSArray* (^MatcherBlock)(NSString *password);
 {
     NSMutableArray *dictionaryMatchers = [[NSMutableArray alloc] init];
     
-    NSString *filePath = [[NSBundle bundleForClass:[self class]] pathForResource:@"frequency_lists" ofType:@"json"];
+    NSString *filePath = [SWIFTPM_MODULE_BUNDLE pathForResource:@"frequency_lists" ofType:@"json"];
     NSData *data = [NSData dataWithContentsOfFile:filePath];
     
     NSError *error;
@@ -629,7 +630,7 @@ typedef NSArray* (^MatcherBlock)(NSString *password);
 
 - (NSDictionary *)loadAdjacencyGraphs
 {
-    NSString *filePath = [[NSBundle bundleForClass:[self class]] pathForResource:@"adjacency_graphs" ofType:@"json"];
+    NSString *filePath = [SWIFTPM_MODULE_BUNDLE pathForResource:@"adjacency_graphs" ofType:@"json"];
     NSData *data = [NSData dataWithContentsOfFile:filePath];
     
     NSError *error;

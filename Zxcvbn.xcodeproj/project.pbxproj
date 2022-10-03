@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		04A6F82628EC2E71003A018B /* ModuleBundle.m in Sources */ = {isa = PBXBuildFile; fileRef = 04A6F82528EC2E71003A018B /* ModuleBundle.m */; };
 		D80ECB6C1BDEAA420055EF0A /* Zxcvbn.h in Headers */ = {isa = PBXBuildFile; fileRef = D80ECB6B1BDEAA420055EF0A /* Zxcvbn.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D80ECB731BDEAA420055EF0A /* Zxcvbn.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D80ECB681BDEAA420055EF0A /* Zxcvbn.framework */; };
 		D80ECB781BDEAA420055EF0A /* ZxcvbnTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D80ECB771BDEAA420055EF0A /* ZxcvbnTests.m */; };
@@ -37,6 +38,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		04A6F82528EC2E71003A018B /* ModuleBundle.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ModuleBundle.m; sourceTree = "<group>"; };
+		04A6F82728EC2EF7003A018B /* ModuleBundle.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ModuleBundle.h; sourceTree = "<group>"; };
 		D80ECB681BDEAA420055EF0A /* Zxcvbn.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Zxcvbn.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D80ECB6B1BDEAA420055EF0A /* Zxcvbn.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Zxcvbn.h; sourceTree = "<group>"; };
 		D80ECB6D1BDEAA420055EF0A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -104,6 +107,8 @@
 				D80ECB891BDEAA7D0055EF0A /* DBZxcvbn.m */,
 				D80ECB841BDEAA7D0055EF0A /* DBPasswordStrengthMeterView.h */,
 				D80ECB851BDEAA7D0055EF0A /* DBPasswordStrengthMeterView.m */,
+				04A6F82728EC2EF7003A018B /* ModuleBundle.h */,
+				04A6F82528EC2E71003A018B /* ModuleBundle.m */,
 				D80ECB991BDEAAA10055EF0A /* Generated */,
 				D80ECB6D1BDEAA420055EF0A /* Info.plist */,
 			);
@@ -204,6 +209,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 			);
 			mainGroup = D80ECB5E1BDEAA420055EF0A;
@@ -244,6 +250,7 @@
 				D80ECB921BDEAA7D0055EF0A /* DBScorer.m in Sources */,
 				D80ECB8F1BDEAA7D0055EF0A /* DBPasswordStrengthMeterView.m in Sources */,
 				D80ECB951BDEAA7D0055EF0A /* DBZxcvbn.m in Sources */,
+				04A6F82628EC2E71003A018B /* ModuleBundle.m in Sources */,
 				D80ECB8C1BDEAA7D0055EF0A /* DBMatcher.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
